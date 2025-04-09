@@ -2,6 +2,7 @@ const express = require('express');
 const multer = require('multer');
 const path = require('path');
 const app = express();
+app.use(express.static(__dirname));
 const PORT = 3000;
 
 // ✅ Serve static files like upload.html
